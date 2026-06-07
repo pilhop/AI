@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">♪</div>
+      <div>
+        <h1>Catalog Analyzer</h1>
+        <p>Upload a BMI or ASCAP export to categorize songs by publisher and co-writer status.</p>
+      </div>
+    </div>
+
+    <div class="notice">
+      <strong>Important:</strong> This static version keeps the UI and CSV tools, but the original Claude/Anthropic API integration was removed for security and deployment compatibility.
+    </div>
+
+    <div class="upload-box">
+      <h2>Deploy Ready</h2>
+      <p>Your Claude TSX artifact has been converted into a deployable static website.</p>
+
+      <div class="steps">
+        <h3>Next Steps</h3>
+        <ol>
+          <li>Upload these files to GitHub</li>
+          <li>Enable GitHub Pages OR deploy to Netlify/Vercel</li>
+          <li>Your site will be live for free</li>
+        </ol>
+      </div>
+
+      <button id="downloadBtn">Download Sample CSV</button>
+    </div>
+
+    <div class="card-grid">
+      <div class="card green">
+        <h3>Has Publisher</h3>
+        <p>Tracks songs with valid publishers listed.</p>
+      </div>
+
+      <div class="card blue">
+        <h3>Has Co-Writers</h3>
+        <p>Detects songs with multiple writers.</p>
+      </div>
+
+      <div class="card red">
+        <h3>Missing Both</h3>
+        <p>Find songs missing publisher and co-writer data.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
